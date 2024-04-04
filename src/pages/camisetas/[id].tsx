@@ -66,54 +66,53 @@ const CamisetaDetails: NextPage<CamisetaDetailsProps> = ({ camiseta }) => {
     }
 
     return (
-        <center>
-            <>
-                <h1><strong>{camiseta.nome} {selectedTamanho || ''} {selectedCor || ''}</strong></h1>
-                <div className="camiseta-card__img" style={{ backgroundImage: `url(${camiseta.imagem[camiseta.cores.indexOf(selectedCor)]})` }} />
-                <br />
-                <div className='width-400'>
-                    <p><strong>Preço: </strong> R$ {camiseta.preco.toFixed(2)}</p>
-                    <p>
-                        <strong>Tamanhos disponíveis: </strong>
-                        {camiseta.tamanhos.map(tamanho => (
-                            <button
-                                key={tamanho}
-                                disabled={!camiseta.disponiveis.find(item => item.cor === selectedCor)?.tamanhos.includes(tamanho)}
-                                onClick={() => handleTamanhoChange(tamanho)}
-                                style={{
-                                    marginRight: '10px',
-                                    border: '1px solid #ccc',
-                                    padding: '0 5px',
-                                    background: tamanho === selectedTamanho && camiseta.disponiveis.find(item => item.cor === selectedCor)?.tamanhos.includes(tamanho) ? '#ccc' : '',
-                                    color: !camiseta.disponiveis.find(item => item.cor === selectedCor)?.tamanhos.includes(tamanho) ? '#ccc' : 'black'
-                                }}
-                            >
-                                {tamanho}
-                            </button>
-                        ))}
-                    </p>
-                    <p>
-                        <strong>Cores disponíveis: </strong>
-                        {camiseta.cores.map(cor => (
-                            <button
-                                key={cor}
-                                disabled={!camiseta.disponiveis.find(item => item.cor === cor)?.tamanhos.includes(selectedTamanho)}
-                                onClick={() => handleCorChange(cor)}
-                                style={{
-                                    marginRight: '10px',
-                                    border: '1px solid #ccc',
-                                    padding: '0 5px',
-                                    background: cor === selectedCor && camiseta.disponiveis.find(item => item.cor === cor)?.tamanhos.includes(selectedTamanho) ? '#ccc' : '',
-                                    color: !camiseta.disponiveis.find(item => item.cor === cor)?.tamanhos.includes(selectedTamanho) ? '#ccc' : 'black'
-                                }}
-                            >
-                                {cor}
-                            </button>
-                        ))}
-                    </p>
-                </div>
-            </>
-        </center>
+        <div className='container-center'>
+            <h1><strong>{camiseta.nome} {selectedTamanho || ''} {selectedCor || ''}</strong></h1>
+            <br />
+            <div className="camiseta-card__img" style={{ backgroundImage: `url(${camiseta.imagem[camiseta.cores.indexOf(selectedCor)]})` }} />
+            <br />
+            <div className='width-400'>
+                <p><strong>Preço: </strong> R$ {camiseta.preco.toFixed(2)}</p>
+                <p>
+                    <strong>Tamanhos disponíveis: </strong>
+                    {camiseta.tamanhos.map(tamanho => (
+                        <button
+                            key={tamanho}
+                            disabled={!camiseta.disponiveis.find(item => item.cor === selectedCor)?.tamanhos.includes(tamanho)}
+                            onClick={() => handleTamanhoChange(tamanho)}
+                            style={{
+                                marginRight: '10px',
+                                border: '1px solid #ccc',
+                                padding: '0 5px',
+                                background: tamanho === selectedTamanho && camiseta.disponiveis.find(item => item.cor === selectedCor)?.tamanhos.includes(tamanho) ? '#ccc' : '',
+                                color: !camiseta.disponiveis.find(item => item.cor === selectedCor)?.tamanhos.includes(tamanho) ? '#ccc' : 'black'
+                            }}
+                        >
+                            {tamanho}
+                        </button>
+                    ))}
+                </p>
+                <p>
+                    <strong>Cores disponíveis: </strong>
+                    {camiseta.cores.map(cor => (
+                        <button
+                            key={cor}
+                            disabled={!camiseta.disponiveis.find(item => item.cor === cor)?.tamanhos.includes(selectedTamanho)}
+                            onClick={() => handleCorChange(cor)}
+                            style={{
+                                marginRight: '10px',
+                                border: '1px solid #ccc',
+                                padding: '0 5px',
+                                background: cor === selectedCor && camiseta.disponiveis.find(item => item.cor === cor)?.tamanhos.includes(selectedTamanho) ? '#ccc' : '',
+                                color: !camiseta.disponiveis.find(item => item.cor === cor)?.tamanhos.includes(selectedTamanho) ? '#ccc' : 'black'
+                            }}
+                        >
+                            {cor}
+                        </button>
+                    ))}
+                </p>
+            </div>
+        </div>
     );
 };
 

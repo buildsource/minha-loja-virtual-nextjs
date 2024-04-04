@@ -45,33 +45,28 @@ const Home: NextPage<HomeProps> = ({ camisetas }) => {
             placeholder="Filtrar por nome"
             value={filtroNome}
             onChange={(e) => setFiltroNome(e.target.value)}
-            className="p-2 border rounded"
           />
           <input
             type="number"
             placeholder="Filtrar por preço máximo"
             value={filtroPreco}
             onChange={(e) => setFiltroPreco(e.target.value)}
-            className="p-2 border rounded"
           />
           <input
             type="text"
             placeholder="Filtrar por tamanho"
             value={filtroTamanho}
             onChange={(e) => setFiltroTamanho(e.target.value)}
-            className="p-2 border rounded"
           />
           <input
             type="text"
             placeholder="Filtrar por cor"
             value={filtroCor}
             onChange={(e) => setFiltroCor(e.target.value)}
-            className="p-2 border rounded"
           />
         </>
       </div>
 
-      <br />
       <div className="container">
         {camisetasFiltradas.map((camiseta) => (
           <div key={camiseta.id} className="item">
