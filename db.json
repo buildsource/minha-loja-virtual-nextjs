@@ -1,0 +1,117 @@
+{
+    "camisetas": [
+        {
+            "id": 1,
+            "nome": "Camiseta Cópia",
+            "preco": 50.00,
+            "tamanhos": [
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "cores": [
+                "Cinza",
+                "Preto",
+                "Branco"
+            ],
+            "disponiveis": [
+                {
+                    "tamanhos": [
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "cor": "Branco"
+                },
+                {
+                    "tamanhos": [
+                        "P",
+                        "M"
+                    ],
+                    "cor": "Preto"
+                }
+            ],
+            "imagem": [
+                "https://cdn.listingmirror.com/9064/98ff6eeb-6e25-52fa-818a-7abe1af7f374/full.jpg",
+                "https://images.tcdn.com.br/img/img_prod/435637/camiseta_infantil_miniatura_do_papai_2219_1_d0a988b390c990c101edd425b8acca79.jpg",
+                "https://static.zattini.com.br/produtos/camiseta-infantil-masculina-copia-da-mamae/14/QSA-0132-014/QSA-0132-014_zoom1.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Camiseta Básica",
+            "preco": 70.00,
+            "tamanhos": [
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "cores": [
+                "Vermelho",
+                "Azul"
+            ],
+            "disponiveis": [
+                {
+                    "tamanhos": [
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "cor": "Vermelho"
+                },
+                {
+                    "tamanhos": [
+                        "P",
+                        "M"
+                    ],
+                    "cor": "Verde"
+                }
+            ],
+            "imagem": [
+                "https://rsv-ink-images-production.s3.sa-east-1.amazonaws.com/images/product_art/final_image/80761546aaafd427a627d38db3e28a81.webp",
+                "https://rsv-ink-images-production.s3.sa-east-1.amazonaws.com/images/product_v2/main_image/9f546c124a257f808ca2bb673feae73d.webp"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Camiseta Polo",
+            "preco": 70.00,
+            "tamanhos": [
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "cores": [
+                "Preto",
+                "Branco"
+            ],
+            "disponiveis": [
+                {
+                    "tamanhos": [
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "cor": "Branco"
+                },
+                {
+                    "tamanhos": [
+                        "P",
+                        "M"
+                    ],
+                    "cor": "Preto"
+                }
+            ],
+            "imagem": [
+                "https://cordilheirabrasil.com/cdn/shop/files/4_c767fbcb-9ac4-4dac-95de-6243b641ce77.png",
+                "https://cordilheirabrasil.com/cdn/shop/files/1_f3196e7a-3907-4957-bdc1-e9006bae134f.png"
+            ]
+        }
+    ]
+}

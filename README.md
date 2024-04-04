@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Minha Loja Virtual 🛍️👕
+Este é um projeto de uma loja virtual onde é possível visualizar e comprar camisetas disponíveis. O projeto foi desenvolvido utilizando Next.js para o frontend e uma API fake provida pelo JSON Server para simular o backend.
 
-## Getting Started
+## Como funciona
+A loja virtual exibe uma lista de camisetas disponíveis para compra, com informações como nome, preço, tamanhos disponíveis, cores disponíveis e uma imagem representativa. Os usuários podem filtrar as camisetas por nome, preço, tamanho e cor.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Como executar o projeto
+Instalação de Dependências: Antes de começar, certifique-se de ter o Node.js e o npm instalados em sua máquina. Em seguida, execute o seguinte comando para instalar as dependências do projeto:
 ```
+npm install
+```
+**Iniciar o JSON Server:** O JSON Server é usado para fornecer uma API de backend simulada com os dados das camisetas. Execute o seguinte comando para iniciar o JSON Server:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+npm run json-server
+```
+Isso iniciará o JSON Server na porta 3333 e servirá os dados do arquivo db.json.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Iniciar o Frontend: Após iniciar o JSON Server, execute o seguinte comando para iniciar o frontend da aplicação:
+```
+npm run dev
+```
+Isso iniciará o servidor de desenvolvimento do Next.js. Você poderá acessar a loja virtual em http://localhost:3000.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Comandos Disponíveis
+- npm run dev: Inicia o servidor de desenvolvimento do Next.js.
+- npm run build: Compila o projeto para produção.
+- npm run start: Inicia o servidor de produção do Next.js.
+- npm run lint: Executa a verificação de linting no código.
+- npm run json-server: Inicia o JSON Server para fornecer uma API de backend simulada.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tecnologias Utilizadas
+- Next.js
+- React.js
+- JSON Server
